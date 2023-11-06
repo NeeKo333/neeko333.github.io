@@ -1,0 +1,28 @@
+$gold: #c9ab63;
+$red: rgba(238, 37, 97, 0.986);
+
+$breakpoint-xxl: 1920px;
+$breakpoint-xl: 1700px;
+$breakpoint-lg: 1200px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+$white: #ffffff;
+$black: #040504;
+
+/* Transitions */
+$transition-duration-default: 0.3s;
+$transition-delay: 0.3s;
+$transition-default: 0.3s linear;
+
+$delay-animation-page: 0.3s;
+
+@media (min-width: 1700px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1410px;
+  }
+}

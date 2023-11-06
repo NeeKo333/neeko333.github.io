@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/pages/about</loc>
+  </url>
+  <url>
+    <loc>/pages/album</loc>
+  </url>
+  <url>
+    <loc>/pages/locations</loc>
+  </url>
+  <url>
+    <loc>/pages/policy</loc>
+  </url>
+  <url>
+    <loc>/pages/service</loc>
+  </url>
+</urlset>

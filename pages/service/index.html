@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Service</title>
+    <style>
+      @keyframes preloader-animation {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+      }
+
+      .preloader::before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: -30px;
+        margin-left: -30px;
+        border-radius: 50%;
+        border: 4px solid #ccc;
+        border-top-color: #c9ab63;
+        animation: preloader-animation 0.6s linear infinite;
+      }
+
+      .preloader.loaded {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <span class="header__close-btn">
+        <img class="header__close-btn-img" src="/img/close_big.svg" alt="" />
+      </span>
+
+      <div class="header__burger-menu">
+        <span class="header__burger-menu-line"></span>
+      </div>
+
+      <a href="/" class="header__logo">
+        <img class="header__logo-img" src="/img/logo.png" alt="logo" />
+      </a>
+
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <a
+            href="javascript:void(0);"
+            class="header__logo header__logo_burger-logo"
+          >
+            <img class="header__logo-img" src="/img/logo.png" alt="logo" />
+          </a>
+          <a class="header__nav-link" href="/pages/album/index.html"
+            ><li class="header__nav-item">Procedures</li></a
+          >
+
+          <a class="header__nav-link" href="/pages/about/index.html"
+            ><li class="header__nav-item">About Us</li></a
+          >
+          <a class="header__nav-link" href="/pages/locations/index.html"
+            ><li class="header__nav-item">Locations</li></a
+          >
+          <a class="header__nav-link" href="/pages/policy/index.html"
+            ><li class="header__nav-item">Policy</li></a
+          >
+
+          <a
+            href="tel:+4047375803"
+            class="header__number-desc header__burger-number-desc"
+            >(404) 737-5803</a
+          >
+        </ul>
+      </div>
+
+      <a href="tel:+4047375803" class="header__number-desc">(404) 737-5803</a>
+      <a href="tel:+4047375803" class="header__number-mobile">
+        <img src="/img/phone.svg" alt="" />
+      </a>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="service-wrapper">
+          <div class="service-wrapper__banner">
+            <img src="/img/office.jpg" alt="" />
+          </div>
+          <section class="service">
+            <div class="service__content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio vel iusto dolorum qui? Mollitia quia pariatur ipsa
+              voluptate officiis illum fugit optio. Sequi facilis recusandae
+              laudantium beatae minima ipsum corporis.
+            </div>
+          </section>
+
+          <footer id="footer" class="footer-1">
+            <div class="main-footer widgets-dark typo-light">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                      <h5 class="widget-title">
+                        Advanced Aesthetics<span></span>
+                      </h5>
+                      <p>
+                        Serving the Las Vegas/Henderson Metropolitan area for
+                        some 20 years, Advanced Aesthetics has become synonymous
+                        with excellence in every aspect of your beauty needs.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                      <h5 class="widget-title">Quick Links<span></span></h5>
+                      <ul class="thumbnail-widget">
+                        <li>
+                          <div class="thumb-content">
+                            <a href="/pages/album/index.html" class="linked"
+                              >Procedures</a
+                            >
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-content">
+                            <a href="/pages/about/index.html">About Us</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-content">
+                            <a href="/pages/locations/index.html">Locations</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-content">
+                            <a href="/pages/policy/index.html">Policy</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                      <h5 class="widget-title">Office<span></span></h5>
+                      <a
+                        href="https://www.google.com/maps/place/Advanced+Aesthetics/@36.1483577,-115.2449888,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c0e757311ec5:0x9039b4a3b3a1f3c9!8m2!3d36.1483577!4d-115.2424085!16s%2Fg%2F1w15zqm9?entry=ttu"
+                        target="_blank"
+                        class="geo-link"
+                        >2150 S Rainbow Blvd Las Vegas, NV 89146</a
+                      >
+                      <a
+                        href="https://www.google.com/maps/place/Advanced+Aesthetics/@36.1483577,-115.2449888,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c0e757311ec5:0x9039b4a3b3a1f3c9!8m2!3d36.1483577!4d-115.2424085!16s%2Fg%2F1w15zqm9?entry=ttu"
+                        target="_blank"
+                        class="geo-link"
+                        >60 N Pecos Rd #110 Henderson, NV 89074</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                      <h5 class="widget-title">Contact Us<span></span></h5>
+
+                      <p>
+                        <a
+                          href="mailto:advancedaesthetics@gmail.com"
+                          title="glorythemes"
+                          >advancedaesthetics@gmail.com</a
+                        >
+                      </p>
+                      <p>
+                        <a href="tel:+7028384644" title="glorythemes"
+                          >(702) 838-4644</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <div class="cookies-eu-banner">
+      By clicking ”OK”, you agree to the storing of cookies on your device to
+      enhance site navigation, analyze site usage, and improve marketing.
+      <button>Accept</button>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+    <script src="/js/burgerMenu.js"></script>
+    <script src="/js/cookies.js" type="module"></script>
+  </body>
+</html>

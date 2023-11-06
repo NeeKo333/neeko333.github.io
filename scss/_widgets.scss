@@ -1,0 +1,88 @@
+/* Widgets */
+.widget {
+  padding: 20px;
+  margin-bottom: 40px;
+
+  &.widget-last {
+    margin-bottom: 0;
+  }
+
+  &.no-box {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+
+    .geo-link {
+      line-height: 180%;
+    }
+
+    .thumbnail-widget {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    a {
+      color: $gold;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &.subscribe {
+    p {
+      margin-bottom: 18px;
+    }
+  }
+
+  li a {
+    color: $gold;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &-title {
+    margin-bottom: 20px;
+
+    span {
+      background: #839fad;
+      display: block;
+      height: 1px;
+      margin-top: 25px;
+      position: relative;
+      width: 20%;
+
+      &::after {
+        background: inherit;
+        content: "";
+        height: inherit;
+        position: absolute;
+        top: -4px;
+        width: 50%;
+      }
+    }
+
+    &.text-center {
+      span,
+      span::after {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .badge {
+    float: right;
+    background: #7f7f7f;
+  }
+}

@@ -1,0 +1,42 @@
+/* Main Footer */
+footer {
+  .main-footer {
+    padding: 20px 0;
+    background-color: #0f0f28;
+    font-size: 16px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+
+  .footer-top {
+    background: #252525;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
+  }
+}
+
+ul.social-footer2 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+
+  li {
+    display: inline-block;
+    padding: 0;
+
+    a:hover {
+      background-color: #ff8d1e;
+    }
+
+    a {
+      display: block;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+    }
+  }
+}

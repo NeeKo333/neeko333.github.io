@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /pages/
+Allow: /pages/about
+Allow: /pages/album
+Allow: /pages/locations
+Allow: /pages/policy
+Allow: /pages/service
+

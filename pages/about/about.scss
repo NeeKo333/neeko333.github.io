@@ -1,0 +1,72 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  &__banner {
+    width: 100%;
+    height: 50rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.about {
+  flex: 1 1 100%;
+  font-size: 32px;
+  padding: 5rem 20rem;
+
+  &__content {
+    padding-bottom: 3rem;
+    @media (max-width: $breakpoint-sm) {
+      padding-top: 0;
+    }
+    h1 {
+      font-size: 46px;
+      color: $gold;
+      padding-bottom: 5rem;
+
+      @media (max-width: $breakpoint-sm) {
+        font-size: 36px;
+        padding-bottom: 2rem;
+      }
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 32px;
+      color: $gold;
+      padding-top: 3rem;
+    }
+
+    strong {
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 26px;
+    }
+
+    li {
+      padding-bottom: 1rem;
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 5rem 10rem;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 5rem 5rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 5rem 15px;
+  }
+}

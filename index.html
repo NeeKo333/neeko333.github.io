@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @keyframes preloader-animation {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+      }
+
+      .preloader::before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: -30px;
+        margin-left: -30px;
+        border-radius: 50%;
+        border: 4px solid #ccc;
+        border-top-color: #c9ab63;
+        animation: preloader-animation 0.6s linear infinite;
+      }
+
+      .preloader.loaded {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Advanced Aesthetics</title>
+  </head>
+  <body>
+    <div class="preloader"></div>
+
+    <header class="header">
+      <span class="header__close-btn">
+        <img class="header__close-btn-img" src="./img/close_big.svg" alt="" />
+      </span>
+
+      <div class="header__burger-menu">
+        <span class="header__burger-menu-line"></span>
+      </div>
+
+      <a href="/" class="header__logo">
+        <img class="header__logo-img" src="./img/logo.png" alt="logo" />
+      </a>
+
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <a
+            href="javascript:void(0);"
+            class="header__logo header__logo_burger-logo"
+          >
+            <img class="header__logo-img" src="./img/logo.png" alt="logo" />
+          </a>
+          <a class="header__nav-link" href="./pages/album/index.html"
+            ><li class="header__nav-item">Procedures</li></a
+          >
+
+          <a class="header__nav-link" href="./pages/about/index.html"
+            ><li class="header__nav-item">About Us</li></a
+          >
+          <a class="header__nav-link" href="./pages/locations/index.html"
+            ><li class="header__nav-item">Locations</li></a
+          >
+          <a class="header__nav-link" href="./pages/policy/index.html"
+            ><li class="header__nav-item">Policy</li></a
+          >
+
+          <a
+            href="tel:+4047375803"
+            class="header__number-desc header__burger-number-desc"
+            >(404) 737-5803</a
+          >
+        </ul>
+      </div>
+
+      <a href="tel:+4047375803" class="header__number-desc">(404) 737-5803</a>
+      <a href="tel:+4047375803" class="header__number-mobile">
+        <img src="./img/phone.svg" alt="" />
+      </a>
+    </header>
+
+    <div class="wrapper">
+      <main class="main">
+        <section class="intro-content">
+          <div class="intro-content__wrapper">
+            <div class="intro-content__wrapper-all-content">
+              <h1 class="intro-content__wrapper-header">
+                State of the art surgery center
+              </h1>
+              <p class="intro-content__wrapper-text">
+                Achieve your most beautiful self
+              </p>
+              <p class="intro-content__wrapper-text">
+                Schedule complimentary Cosmetic Consultation
+              </p>
+              <a
+                class="gold-btn intro-content__wrapper-link"
+                href="https://advancedaestheticslv.com"
+                target="_blank"
+                >Schedule now</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="main-section">
+          <div class="container">
+            <h3 class="main-section__header animate">
+              The Advanced Commitment
+            </h3>
+
+            <div class="row main-section__content justify-content-center">
+              <div class="main-section__content-cards">
+                <div class="main-section__content-card animate">
+                  <div class="main-section__content-card-img">
+                    <img
+                      src="img/corona.png"
+                      alt="health picture"
+                      class="main-section__content-card-img"
+                    />
+                  </div>
+
+                  <h2 class="main-section__content-card-header">
+                    Patient-Focused Care
+                  </h2>
+
+                  <p class="main-section__content-card-text">
+                    Our mission is to help our Texas patients choose the right
+                    treatments to achieve their goals, deliver a comfortable and
+                    rewarding treatment experience, and restore your confidence
+                    by producing consistently dramatic, natural-looking, and
+                    stunning results.
+                  </p>
+                </div>
+
+                <div class="main-section__content-card animate">
+                  <div class="main-section__content-card-img">
+                    <img src="img/protect.png" alt="protect picture" />
+                  </div>
+
+                  <h2 class="main-section__content-card-header">
+                    Fully Accredited Surgical Center
+                  </h2>
+                  <p class="main-section__content-card-text">
+                    Our private, state-of-the-art surgical suite meets the
+                    highest safety standards in the industry and is accredited
+                    by the American Association for Accreditation of Ambulatory
+                    Surgery Facilities (AAAASF).
+                  </p>
+                </div>
+
+                <div class="main-section__content-card animate">
+                  <div class="main-section__content-card-img">
+                    <img src="img/technology.png" alt="technology picture" />
+                  </div>
+
+                  <h2 class="main-section__content-card-header">
+                    Advanced Technology
+                  </h2>
+                  <p class="main-section__content-card-text">
+                    Our surgeon uses the latest technology and state-of-the-art
+                    techniques so we can produce the best possible results. From
+                    the full range of breast implant options to non-invasive
+                    injectable treatments, we can enhance your appearance safely
+                    and comfortably.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tabs-section">
+          <div class="container">
+            <div class="row tabs-section-content">
+              <div class="col-md-11 col-xl-6">
+                <div class="tabs-section-content__all-content">
+                  <span class="tabs-section-content__description"
+                    >OUR PROCEDURES</span
+                  >
+
+                  <h3 class="tabs-section-content__header">What We Offer</h3>
+
+                  <p class="tabs-section-content__text">
+                    Our surgeons include Dr. Paul Feldman, Dr. Edward Gronka,
+                    Dr. Joseph Raniere, and Dr. Joel Stewart – all of whom are
+                    Board Certified plastic surgeons.
+                  </p>
+
+                  <p class="tabs-section-content__text">
+                    Each of our surgeons uphold the highest level of patient
+                    care and support the vision to provide the Atlanta community
+                    with a facility where they can achieve their aesthetic
+                    goals. Many of our procedures can even be combined together
+                    in order to help you save money and ease recovery time –
+                    we’re here to provide treatment in a way that suits you in
+                    the most efficient way possible.
+                  </p>
+
+                  <p class="tabs-section-content__text">
+                    We offer a variety of face, breast and body procedures that
+                    include:
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-xl-6">
+                <div class="nav-conteiner">
+                  <ul class="nav main-nav" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link active"
+                        data-toggle="tab"
+                        href="#content1"
+                        role="tab"
+                        >Threadlift</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content2"
+                        role="tab"
+                        >Coolsculpting</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content3"
+                        role="tab"
+                        >Xeomin</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content4"
+                        role="tab"
+                        >Lip Fillers</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content5"
+                        role="tab"
+                        >Chemical Peels</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content6"
+                        role="tab"
+                        >Botox</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link main-nav-link"
+                        data-toggle="tab"
+                        href="#content7"
+                        role="tab"
+                        >Hair Removal</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="content1">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Surgency.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Threadlift</span>
+
+                      <p class="tab-pane__offer-text">
+                        Discover a radiant and lifted version of yourself with
+                        Threadlift, the revolutionary non-surgical facelift. Say
+                        goodbye to sagging skin and embrace a more youthful
+                        appearance.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content2">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Coolsculpting.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Coolsculpting</span>
+
+                      <p class="tab-pane__offer-text">
+                        Sculpt your confidence with CoolSculpting, the
+                        cutting-edge solution to unwanted fat. Say farewell to
+                        stubborn bulges and hello to a contoured, toned
+                        physique.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content3">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Xeomin.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Xeomin</span>
+
+                      <p class="tab-pane__offer-text">
+                        Revitalize your natural beauty with Xeomin, the secret
+                        to smoother, wrinkle-free skin. This advanced anti-aging
+                        treatment delivers stunning results, reducing fine lines
+                        and wrinkles with precision.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content4">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Filler.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Lip Fillers</span>
+
+                      <p class="tab-pane__offer-text">
+                        Pout perfection is just a filler away! Transform your
+                        look with our Lip Filler treatment, the key to achieving
+                        luscious, fuller lips. Say goodbye to thin lips and
+                        hello to a more confident, glamorous you.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content5">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Peels.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Chemical Peels</span>
+
+                      <p class="tab-pane__offer-text">
+                        Reveal radiant skin with our Chemical Peel treatment,
+                        your secret to a flawless complexion. Uncover a
+                        brighter, smoother, and more youthful glow as the peel
+                        stimulates cell turnover and collagen production.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content6">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Botex.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Botox</span>
+
+                      <p class="tab-pane__offer-text">
+                        Unlock the fountain of youth with Botox, your go-to
+                        solution for smooth, age-defying beauty. Botox works by
+                        relaxing facial muscles, creating a rejuvenated
+                        appearance without sacrificing your expressions.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="content7">
+                    <div class="tab-pane__offer">
+                      <img
+                        class="tab-pane__offer-img"
+                        src="./img/Hair.jpg"
+                        alt=""
+                      />
+                      <span class="tab-pane__offer-name">Hair Removal</span>
+
+                      <p class="tab-pane__offer-text">
+                        Say goodbye to unwanted hair and hello to silky-smooth
+                        skin with our Hair Removal solution. Experience the
+                        freedom of effortlessly smooth legs, underarms, and
+                        more.
+                      </p>
+
+                      <a href="#" class="tab-pane__offer-link gold-btn"
+                        >ORDER</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="photo-section-section">
+          <div class="container">
+            <div class="row photo-section-content justify-content-center">
+              <div
+                class="col-xl-10 photo-section-content__description-col animate"
+              >
+                <span class="photo-section-content__description"
+                  >OUR SURGEONS</span
+                >
+              </div>
+
+              <div class="col-xl-10 photo-section-content__header-col animate">
+                <h3 class="photo-section-content__header">Who We Are</h3>
+              </div>
+
+              <div class="col-xl-10 photo-section-content__text-col animate">
+                <p class="photo-section-content__text">
+                  We have over 45 years of combined experience working with
+                  individuals who wish to enhance their bodies.
+                </p>
+              </div>
+
+              <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-3 photo-section-content__photo-row"
+              >
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img" src="./img/Bernie.jpg" alt="" />
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img" src="./img/charina.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img class="card-img" src="./img/Jeff.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="collapse" id="exampleCollapse">
+                <div
+                  class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 g-3 photo-section-content__photo-row"
+                >
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img class="card-img" src="./img/Frankie.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img class="card-img" src="./img/Meagan.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img class="card-img" src="./img/Mike.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#exampleCollapse"
+                class="btn gold-btn photo-section-content__collapse-btn"
+                data-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="exampleCollapse"
+                >view more</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="seo-section">
+          <div class="container">
+            <div class="row seo-section-content">
+              <div class="col-xl-6 seo-section-content__img-wrapper">
+                <img src="./img/office.jpg" alt="" />
+              </div>
+
+              <div class="col-xl-6 seo-section-content__text">
+                <div class="seo-section-content__text-all-content">
+                  <h3 class="seo-section-content__text-header animate">
+                    Our capabilities
+                  </h3>
+                  <p class="seo-section-content__text-paragraph animate">
+                    The plastic surgeons of Advanced Aesthetics have years of
+                    experience performing facial cosmetic surgery in Atlanta.
+                    They are renowned throughout the state for their expertise.
+                    T If you would like to take years off your appearance and
+                    start looking and feeling youthful again,
+                    <a
+                      href="/pages/about/index.html"
+                      class="seo-section-content__text-paragraph-link"
+                    >
+                      please feel free to browse through our list of
+                      procedures</a
+                    >
+                    to see how we can help you realize your dream.
+                  </p>
+                  <a
+                    href="/pages/about/index.html"
+                    class="seo-section-content__text-link gold-btn"
+                    >Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section animate">
+          <div class="container">
+            <div class="row faq-section-content">
+              <div class="col-12 faq-section-content__header">
+                <h3 class="faq-section-content__header-text">FAQ</h3>
+              </div>
+
+              <div class="d-block d-md-none accordion">
+                <div class="accordion__conteiner" id="accordion" role="tablist">
+                  <div class="accordion__item">
+                    <div class="accordion__item-head" role="tab" id="heading1">
+                      <a
+                        class="faq-section-content__nav-link"
+                        data-toggle="collapse"
+                        href="#collapse1"
+                        aria-expanded="true"
+                        aria-controls="collapse1"
+                      >
+                        How do I choose the right plastic surgeon?
+                      </a>
+                    </div>
+                    <div
+                      id="collapse1"
+                      class="collapse show"
+                      role="tabpanel"
+                      aria-labelledby="heading1"
+                      data-parent="#accordion"
+                    >
+                      <div class="accordion__item-text">
+                        Research the surgeon's qualifications and experience,
+                        check for certification, and membership in professional
+                        associations. Read patient reviews and examine
+                        before-and-after photos of previous procedures.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__item-head" role="tab" id="heading2">
+                      <a
+                        class="collapsed faq-section-content__nav-link"
+                        data-toggle="collapse"
+                        href="#collapse2"
+                        aria-expanded="false"
+                        aria-controls="collapse2"
+                      >
+                        What are the risks associated with plastic surgery?
+                      </a>
+                    </div>
+
+                    <div
+                      id="collapse2"
+                      class="collapse faq-section-content__nav-link"
+                      role="tabpanel"
+                      aria-labelledby="heading2"
+                      data-parent="#accordion"
+                    >
+                      <div class="accordion__item-text">
+                        Any surgical procedure carries risks, such as
+                        infections, bleeding, and reactions to anesthesia.
+                        Thoroughly assess the patient's health and follow the
+                        doctor's post-operative recommendations to minimize
+                        risks.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__item-head" role="tab" id="heading3">
+                      <a
+                        class="collapsed faq-section-content__nav-link"
+                        data-toggle="collapse"
+                        href="#collapse3"
+                        aria-expanded="false"
+                        aria-controls="collapse4"
+                      >
+                        How long is the recovery time after plastic surgery?
+                      </a>
+                    </div>
+                    <div
+                      id="collapse3"
+                      class="collapse"
+                      role="tabpanel"
+                      aria-labelledby="heading3"
+                      data-parent="#accordion"
+                    >
+                      <div class="accordion__item-text">
+                        Recovery time varies depending on the type of surgery.
+                        Some procedures may only require a few days to return to
+                        normal activities, while others may take weeks or even
+                        months. The doctor will provide an individualized
+                        recovery plan.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item">
+                    <div class="accordion__item-head" role="tab" id="heading3">
+                      <a
+                        class="collapsed faq-section-content__nav-link"
+                        data-toggle="collapse"
+                        href="#collapse3"
+                        aria-expanded="false"
+                        aria-controls="collapse3"
+                      >
+                        How long do the results of plastic surgery last?
+                      </a>
+                    </div>
+                    <div
+                      id="collapse5"
+                      class="collapse"
+                      role="tabpanel"
+                      aria-labelledby="heading3"
+                      data-parent="#accordion"
+                    >
+                      <div class="accordion__item-text">
+                        The longevity of results depends on factors such as the
+                        type of surgery, the patient's age, lifestyle, and
+                        genetics. Well-performed procedures typically have
+                        long-lasting effects, but natural aging processes can
+                        still impact results.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-none d-md-block faq-section-content__tabs-section-all-content"
+              >
+                <div class="faq-section-content__nav-tabs-section-conteiner">
+                  <ul
+                    class="nav nav-tabs faq-section-content__nav-tabs-section-content"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link faq-section-content__nav-link active"
+                        data-toggle="tab"
+                        href="#tab1"
+                        role="tab"
+                        >How do I choose the right plastic surgeon?</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link faq-section-content__nav-link"
+                        data-toggle="tab"
+                        href="#tab2"
+                        role="tab"
+                        >What are the risks associated with plastic surgery?</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link faq-section-content__nav-link"
+                        data-toggle="tab"
+                        href="#tab3"
+                        role="tab"
+                      >
+                        How long is the recovery time after plastic surgery?</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link faq-section-content__nav-link"
+                        data-toggle="tab"
+                        href="#tab1"
+                        role="tab"
+                        >How long do the results of plastic surgery last?</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a
+                        class="nav-link faq-section-content__nav-link"
+                        data-toggle="tab"
+                        href="#tab2"
+                        role="tab"
+                        >What are the alternatives to plastic surgery for
+                        enhancing appearance?</a
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="tab-content faq-section-content__nav-tab-content">
+                    <div
+                      class="tab-pane fade show active"
+                      id="tab1"
+                      role="tabpanel"
+                    >
+                      Research the surgeon's qualifications and experience,
+                      check for certification, and membership in professional
+                      associations. Read patient reviews and examine
+                      before-and-after photos of previous procedures..
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                      Any surgical procedure carries risks, such as infections,
+                      bleeding, and reactions to anesthesia. Thoroughly assess
+                      the patient's health and follow the doctor's
+                      post-operative recommendations to minimize risks.
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                      Recovery time varies depending on the type of surgery.
+                      Some procedures may only require a few days to return to
+                      normal activities, while others may take weeks or even
+                      months. The doctor will provide an individualized recovery
+                      plan.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <form class="form-section__form">
+            <div class="form-section__form-title">
+              Fill out the fields to send us a message!
+            </div>
+
+            <div class="form-section__form-field-wrap">
+              <input type="text" name="name" placeholder="NAME" />
+            </div>
+
+            <div class="form-section__form-field-wrap">
+              <input type="email" name="email" placeholder="EMAIL" />
+            </div>
+
+            <div class="form-section__form-field-wrap">
+              <input
+                class="tel"
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="NUMBER"
+              />
+            </div>
+
+            <div class="form-section__form-field-wrap">
+              <textarea
+                name="msg"
+                id="text-area-msg"
+                cols="30"
+                rows="10"
+                placeholder="MESSAGE"
+              ></textarea>
+            </div>
+
+            <div class="form-section__form-field-privacy">
+              <label for="police"
+                >I accept
+                <a href="https://quizzickle.com/privacy_txt.html"
+                  >Privacy policy</a
+                ></label
+              >
+              <input type="checkbox" name="police" id="police" />
+            </div>
+
+            <button disabled class="form-section__form-submit" type="submit">
+              SEND
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget subscribe no-box">
+                  <h5 class="widget-title">Advanced Aesthetics<span></span></h5>
+                  <p>
+                    Serving the Las Vegas/Henderson Metropolitan area for some
+                    20 years, Advanced Aesthetics has become synonymous with
+                    excellence in every aspect of your beauty needs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                  <h5 class="widget-title">Quick Links<span></span></h5>
+                  <ul class="thumbnail-widget">
+                    <li>
+                      <div class="thumb-content">
+                        <a href="/pages/album/index.html" class="linked"
+                          >Procedures</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumb-content">
+                        <a href="/pages/about/index.html">About Us</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumb-content">
+                        <a href="/pages/locations/index.html">Locations</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumb-content">
+                        <a href="/pages/policy/index.html">Policy</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                  <h5 class="widget-title">Office<span></span></h5>
+                  <a
+                    href="https://www.google.com/maps/place/Advanced+Aesthetics/@36.1483577,-115.2449888,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c0e757311ec5:0x9039b4a3b3a1f3c9!8m2!3d36.1483577!4d-115.2424085!16s%2Fg%2F1w15zqm9?entry=ttu"
+                    target="_blank"
+                    class="geo-link"
+                    >2150 S Rainbow Blvd Las Vegas, NV 89146</a
+                  >
+                  <a
+                    href="https://www.google.com/maps/place/Advanced+Aesthetics/@36.1483577,-115.2449888,17z/data=!3m1!4b1!4m6!3m5!1s0x80c8c0e757311ec5:0x9039b4a3b3a1f3c9!8m2!3d36.1483577!4d-115.2424085!16s%2Fg%2F1w15zqm9?entry=ttu"
+                    target="_blank"
+                    class="geo-link"
+                    >60 N Pecos Rd #110 Henderson, NV 89074</a
+                  >
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="widget no-box">
+                  <h5 class="widget-title">Contact Us<span></span></h5>
+
+                  <p>
+                    <a
+                      href="mailto:advancedaesthetics@gmail.com"
+                      title="glorythemes"
+                      >advancedaesthetics@gmail.com</a
+                    >
+                  </p>
+                  <p>
+                    <a href="tel:+7028384644" title="glorythemes"
+                      >(702) 838-4644</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup-message popup">
+      <div class="popup__wrapper">
+        <svg class="popup__close-btn">
+          <use xlink:href="#icon1"></use>
+        </svg>
+
+        <div class="popup-message__content popup__content">
+          <div class="popup__result-message"></div>
+          <div class="popup__result-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookies-eu-banner">
+      By clicking ”OK”, you agree to the storing of cookies on your device to
+      enhance site navigation, analyze site usage, and improve marketing.
+      <button>Accept</button>
+    </div>
+
+    <svg class="hidden_svg">
+      <symbol
+        id="icon1"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"
+        />
+      </symbol>
+    </svg>
+
+    <script src="./js/bootstrap/jq.js"></script>
+    <script src="./js/bootstrap/bootstrap.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/cookies.js"></script>
+  </body>
+</html>

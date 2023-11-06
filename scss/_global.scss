@@ -1,0 +1,72 @@
+.js-body-no-scroll {
+  overflow: hidden;
+}
+
+.gold-btn {
+  display: inline-block;
+  padding: 26px 30px 22px 30px;
+  background-color: $gold;
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  border-radius: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  transition: all 0.5s ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 0px 8px 2px $gold;
+    animation: bounce 1s;
+    color: #000;
+  }
+
+  @media (max-width: 767.5px) {
+    margin-top: 20px;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+      transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+
+    80% {
+      transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Typography */
+.typo-light {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  span,
+  small {
+    color: #fff;
+  }
+}
+
+.hidden_svg {
+  display: none;
+}
